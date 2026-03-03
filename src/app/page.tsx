@@ -483,7 +483,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-slate-950 text-white transition-colors">
+    <div className="relative min-h-screen overflow-x-hidden bg-slate-950 text-white transition-colors">
       <div className="aurora-sheen" />
       <div className="glow-orb top-[-60px] left-[-40px]" />
       <div className="glow-orb glow-orb--cyan bottom-[-80px] right-[-20px]" />
