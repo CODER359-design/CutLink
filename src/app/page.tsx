@@ -489,8 +489,8 @@ export default function Home() {
       <div className="glow-orb glow-orb--cyan bottom-[-80px] right-[-20px]" />
       <div className="glow-orb glow-orb--sm top-[30%] right-[10%]" />
       <div className="grid-overlay" />
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col gap-10 px-6 pb-24 pt-16 sm:px-10">
-        <header className="reveal flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+      <div className="relative z-10 mx-auto flex min-h-screen max-w-6xl flex-col gap-10 px-4 pb-16 pt-12 sm:px-8 sm:pb-20 sm:pt-14 lg:px-10 lg:pb-24 lg:pt-16">
+        <header className="reveal flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-cyan-200/80">
               CutLink
@@ -533,8 +533,8 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="reveal grid gap-6 lg:gap-8 xl:gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
-          <section className="w-full rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-cyan-500/20 backdrop-blur sm:p-8 sm:h-fit lg:self-start">
+        <main className="reveal grid gap-6 md:gap-8 lg:gap-10 md:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_360px] md:items-start">
+          <section className="w-full rounded-3xl border border-white/10 bg-white/5 p-5 shadow-2xl shadow-cyan-500/20 backdrop-blur sm:p-6 md:p-8 h-fit lg:self-start">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="originalUrl" className="text-sm font-medium text-slate-200">
@@ -660,7 +660,7 @@ export default function Home() {
                   )}
                 </div>
                 {result.shortUrl && result.originalUrl && (
-                  <div className="mt-6 grid gap-4 lg:grid-cols-2">
+                  <div className="mt-6 grid gap-4 md:grid-cols-2">
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                       <p className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">
                         Preview
@@ -677,7 +677,7 @@ export default function Home() {
             )}
           </section>
 
-          <aside className="w-full space-y-6">
+          <aside className="w-full space-y-5 md:space-y-6 lg:space-y-8 md:pl-2">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-5 sm:p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-cyan-200/80">
                 Особливості
