@@ -533,8 +533,8 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="reveal grid gap-8 lg:grid-cols-[minmax(0,1fr)_350px]">
-          <section className="w-full rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-cyan-500/20 backdrop-blur sm:h-fit lg:self-start">
+        <main className="reveal grid gap-6 lg:gap-8 xl:gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
+          <section className="w-full rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-cyan-500/20 backdrop-blur sm:p-8 sm:h-fit lg:self-start">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="originalUrl" className="text-sm font-medium text-slate-200">
@@ -677,8 +677,8 @@ export default function Home() {
             )}
           </section>
 
-          <aside className="space-y-6">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <aside className="w-full space-y-6">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-5 sm:p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-cyan-200/80">
                 Особливості
               </p>
@@ -716,7 +716,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-slate-200">
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-5 text-sm text-slate-200 sm:p-6">
               <p className="text-sm uppercase tracking-[0.3em] text-cyan-200/80">
                 Ваша історія
               </p>
@@ -732,7 +732,7 @@ export default function Home() {
           </aside>
         </main>
 
-        <section className="reveal grid gap-6 md:grid-cols-3">
+        <section className="reveal grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {highlightCards.map((card) => (
             <div
               key={card.title}
@@ -747,8 +747,8 @@ export default function Home() {
           ))}
         </section>
 
-        <section className="reveal grid gap-6 md:grid-cols-[320px_1fr]">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+        <section className="reveal grid gap-4 lg:gap-6 lg:grid-cols-[minmax(0,320px)_1fr]">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-5 sm:p-6">
             <p className="text-sm uppercase tracking-[0.3em] text-cyan-200/80">
               Live activity
             </p>
@@ -762,7 +762,7 @@ export default function Home() {
               </div>
             )}
           </div>
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-6">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-5 sm:p-6">
             <p className="text-sm uppercase tracking-[0.3em] text-cyan-200/80">
               Sandbox
             </p>
